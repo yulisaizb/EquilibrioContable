@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EQUILIBRIOCONTABLE - Servicios Contables Profesionales</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">EQUILIBRIOCONTABLE</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="login.html">Iniciar Sesión</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link btn btn-outline-light ms-2" href="register.html">Registrarse</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div class="mt-5">
+                <h1>EQUILIBRIOCONTABLE</h1>
+                <p class="lead">Servicios Contables Profesionales</p>
+                <p>Brindamos soluciones contables integrales para tu negocio</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Services Section -->
+    <section id="services" class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">Nuestros Servicios</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <i class="fas fa-file-invoice-dollar service-icon"></i>
+                            <h3>Recibos e Ingresos</h3>
+                            <p>Gestión profesional de recibos y control de ingresos</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <i class="fas fa-chart-line service-icon"></i>
+                            <h3>Resumen Contable</h3>
+                            <p>Análisis detallado y reportes financieros</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <i class="fas fa-calculator service-icon"></i>
+                            <h3>Servicios Contables</h3>
+                            <p>Asesoría contable integral para tu empresa</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Statistics Section -->
+    <section id="statistics" class="section">
+        <div class="container">
+            <h2 class="section-title">Estadísticas y Análisis</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3 class="card-title">Ingresos Mensuales</h3>
+                            <div class="chart-container">
+                                <canvas id="incomeChart"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3 class="card-title">Distribución de Servicios</h3>
+                            <div class="chart-container">
+                                <canvas id="servicesChart"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row mt-4">
+                <div class="col-12">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3 class="card-title">Resumen Financiero</h3>
+                            <div class="table-container">
+                                <table class="financial-table">
+                                    <thead>
+                                        <tr>
+                                            <th>Concepto</th>
+                                            <th>Enero</th>
+                                            <th>Febrero</th>
+                                            <th>Marzo</th>
+                                            <th>Total</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Ingresos</td>
+                                            <td>$25,000</td>
+                                            <td>$28,500</td>
+                                            <td>$32,000</td>
+                                            <td>$85,500</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Gastos</td>
+                                            <td>$15,000</td>
+                                            <td>$16,200</td>
+                                            <td>$17,500</td>
+                                            <td>$48,700</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Utilidad</td>
+                                            <td>$10,000</td>
+                                            <td>$12,300</td>
+                                            <td>$14,500</td>
+                                            <td>$36,800</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">Sobre Nosotros</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <h3>Educación y Certificaciones</h3>
+                    <ul class="list-unstyled">
+                        <li><i class="fas fa-graduation-cap"></i> Contador Público Certificado</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <h3>Experiencia Laboral</h3>
+                    <ul class="list-unstyled">
+                        <li><i class="fas fa-briefcase"></i> 1+ año en contabilidad corporativa</li>
+                        <li><i class="fas fa-chart-pie"></i> Consulta financiera</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">Contacto</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <form class="contact-form" id="contactForm">
+                        <div class="mb-3">
+                            <input type="text" class="form-control" id="name" placeholder="Nombre" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" class="form-control" id="email" placeholder="Correo electrónico" required>
+                        </div>
+                        <div class="mb-3">
+                            <textarea class="form-control" id="message" rows="4" placeholder="Mensaje" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
+                    </form>
+                </div>
+                <div class="col-md-6 text-center">
+                    <div class="social-icons mt-4">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                    <p class="mt-4">
+                        <i class="fas fa-envelope"></i> contacto@equilibriocontable.com<br>
+                        <i class="fas fa-phone"></i> 601-3233940842
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container text-center">
+            <p>&copy; 2024-2025 EQUILIBRIOCONTABLE. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('¡Gracias por contactarnos! Nos pondremos en contacto contigo pronto.');
+            this.reset();
+        });
+
+        // Income Chart
+        const incomeCtx = document.getElementById('incomeChart').getContext('2d');
+        new Chart(incomeCtx, {
+            type: 'line',
+            data: {
+                labels: ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio'],
+                datasets: [{
+                    label: 'Ingresos Mensuales',
+                    data: [25000, 28500, 32000, 30000, 35000, 38000],
+                    borderColor: '#3498db',
+                    backgroundColor: 'rgba(52, 152, 219, 0.1)',
+                    tension: 0.4,
+                    fill: true
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: {
+                        position: 'top',
+                    }
+                },
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        ticks: {
+                            callback: function(value) {
+                                return '$' + value.toLocaleString();
+                            }
+                        }
+                    }
+                }
+            }
+        });
+
+        // Services Distribution Chart
+        const servicesCtx = document.getElementById('servicesChart').getContext('2d');
+        new Chart(servicesCtx, {
+            type: 'doughnut',
+            data: {
+                labels: ['Contabilidad', 'Auditoría', 'Consultoría', 'Impuestos'],
+                datasets: [{
+                    data: [40, 25, 20, 15],
+                    backgroundColor: [
+                        '#3498db',
+                        '#2ecc71',
+                        '#e74c3c',
+                        '#f1c40f'
+                    ]
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: {
+                        position: 'bottom'
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>
