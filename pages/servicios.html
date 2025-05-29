@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Servicios Contables</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="index.html">
+  <style>
+    /* Estilos generales del cuerpo de la página */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+
+    /* Estilo para el encabezado */
+    header {
+      background-color: #0c3c78;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    /* Contenedor principal para los servicios */
+    .servicios {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      padding: 40px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    /* Cada tarjeta de servicio */
+    .servicio {
+      background-color: white;
+      border-radius: 8px;
+      padding: 20px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.2s;
+    }
+
+    /* Efecto hover para resaltar */
+    .servicio:hover {
+      transform: translateY(-5px);
+    }
+
+    /* Título de cada servicio */
+    .servicio h3 {
+      color: #0c3c78;
+      margin-top: 0;
+    }
+
+    /* Pie de página */
+    footer {
+      background-color: #0c3c78;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Encabezado de la página -->
+  <header>
+    <h1>Servicios Contables</h1>
+    <p>Soluciones profesionales para tu tranquilidad financiera</p>
+  </header>
+
+  <!-- Sección principal de servicios -->
+  <section class="servicios">
+    <!-- Servicio 1 -->
+    <div class="servicio">
+      <h3>Contabilidad General</h3>
+      <p>Registro y control de operaciones financieras según las normas contables vigentes.</p>
+    </div>
+
+    <!-- Servicio 2 -->
+    <div class="servicio">
+      <h3>Declaración de Impuestos</h3>
+      <p>Asesoría y presentación de declaraciones fiscales ante entidades tributarias.</p>
+    </div>
+
+    <!-- Servicio 3 -->
+    <div class="servicio">
+      <h3>Nómina y Seguridad Social</h3>
+      <p>Gestión de nóminas, contratos, y obligaciones con la seguridad social.</p>
+    </div>
+
+    <!-- Servicio 4 -->
+    <div class="servicio">
+      <h3>Asesoría Financiera</h3>
+      <p>Planes personalizados para optimizar tus recursos y mejorar tu rentabilidad.</p>
+    </div>
+
+    <!-- Servicio 5 -->
+    <div class="servicio">
+      <h3>Auditorías Internas</h3>
+      <p>Revisión y evaluación de procesos contables y financieros.</p>
+    </div>
+  </section>
+
+  <!-- Pie de página -->
+  <footer>
+    <p>&copy; 2025 Servicios Contables ABC | Todos los derechos reservados</p>
+  </footer>
+</body>
+</html>
